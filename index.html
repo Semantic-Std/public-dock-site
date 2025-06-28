@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interview9 - Every Thing You Know</title>
+  <meta name="description" content="Our website is currently under construction. Please check back soon.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+      background-color: #475569;
+      color: white;
+      overflow-x: hidden;
+      background-image: url('./bg.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+      backdrop-filter: blur(8px);
+      z-index: -1;
+    }
+
+    .container {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Content */
+    .content {
+      position: relative;
+      z-index: 10;
+    }
+
+    /* Logo */
+    .logo {
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 0.2em;
+    }
+
+    /* Description */
+    .description {
+      color: #cbd5e1;
+      font-size: 16px;
+      max-width: 400px;
+      margin: 0 auto 60px;
+      line-height: 1.6;
+      letter-spacing: 0.05em;
+    }
+
+    /* Contact Button */
+    .contact-btn {
+      background-color: #ef4444;
+      color: white;
+      border: none;
+      padding: 12px 32px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 2px;
+    }
+
+    .contact-btn:hover {
+      background-color: #dc2626;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .main-heading {
+        font-size: 2.5rem;
+      }
+
+      .description {
+        font-size: 14px;
+        max-width: 300px;
+      }
+
+      .decoration {
+        display: none;
+      }
+
+      .logo {
+        margin-bottom: 60px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .main-heading {
+        font-size: 2rem;
+        letter-spacing: 0.1em;
+      }
+
+      .contact-btn {
+        padding: 10px 24px;
+        font-size: 12px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .main-heading {
+        font-size: 5rem;
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Background Pattern -->
+    <div class="background-pattern"></div>
+
+    <!-- Decorative Elements -->
+    <div class="decoration decoration-1"></div>
+    <div class="decoration decoration-2"></div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="./logo.png" alt="interview9.id" width="350px">
+      </div>
+
+      <!-- Main Heading -->
+      <h1 class="main-heading">
+        UNDER CONSTRUCTION
+      </h1>
+
+      <!-- Description -->
+      <p class="description">
+        Our website is currently under construction. Please check back soon.
+      </p>
+
+      <!-- <button class="contact-btn">
+        CONTACT
+      </button> -->
+    </div>
+  </div>
+
+</body>
+
+</html>
